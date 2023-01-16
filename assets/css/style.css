@@ -1303,12 +1303,19 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.row{
+  justify-content:center;
+  align-items: center;
+}
 .contact .info-box {
-  color: #2d405f;
+  color: #0c0c0e;
   text-align: center;
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  box-shadow: 0 0 40px rgba(214, 215, 216, 0.6);
   padding: 20px 0 30px 0;
   background: #fff;
+  border-radius: 30px;
+
+
 }
 
 .contact .info-box i {
@@ -1329,6 +1336,7 @@ section {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
+  font-weight: 900;
 }
 
 .contact .php-email-form {
