@@ -696,6 +696,10 @@ section {
   .steps .content-item {
     padding: 40px 0;
   }
+  iframe{
+    width: 100%;
+    height: 350px;
+  }
 }
 
 /*--------------------------------------------------------------
