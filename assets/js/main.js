@@ -1,9 +1,5 @@
-/**
-* Template Name: Bikin - v4.9.1
-* Template URL: https://bootstrapmade.com/bikin-free-simple-landing-page-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
+
 (function() {
   "use strict";
 
@@ -40,8 +36,8 @@
     el.addEventListener('scroll', listener)
   }
 
-  /**
-   * Navbar links active state on scroll
+  /**Estado ativo dos links da barra de navegação na rolagem
+   * 
    */
   let navbarlinks = select('#navbar .scrollto', true)
   const navbarlinksActive = () => {
@@ -61,7 +57,7 @@
   onscroll(document, navbarlinksActive)
 
   /**
-   * Scrolls to an element with header offset
+   * Rola para um elemento com deslocamento de cabeçalho
    */
   const scrollto = (el) => {
     let header = select('#header')
@@ -75,7 +71,7 @@
   }
 
   /**
-   * Back to top button
+   * Botão voltar ao topo
    */
   let backtotop = select('.back-to-top')
   if (backtotop) {
@@ -91,7 +87,7 @@
   }
 
   /**
-   * Mobile nav toggle
+   * Alternar navegação móvel
    */
   on('click', '.mobile-nav-toggle', function(e) {
     select('#navbar').classList.toggle('navbar-mobile')
@@ -100,7 +96,7 @@
   })
 
   /**
-   * Mobile nav dropdowns activate
+   * Menus suspensos de navegação móvel ativados
    */
   on('click', '.navbar .dropdown > a', function(e) {
     if (select('#navbar').classList.contains('navbar-mobile')) {
@@ -110,7 +106,7 @@
   }, true)
 
   /**
-   * Scrool with ofset on links with a class name .scrollto
+   * Rolar com deslocamento em links com um nome de classe .scrollto
    */
   on('click', '.scrollto', function(e) {
     if (select(this.hash)) {
